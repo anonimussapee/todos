@@ -1,4 +1,5 @@
 {
+  "homepage": "https://anonimussapee.github.io/todo2",
   "name": "todos",
   "version": "0.1.0",
   "dependencies": {
@@ -38,6 +39,5 @@
     "loader-utils": "^3.2.1",
     "nth-check": "^2.1.1",
     "webpack": "^5.85.1"
-  },
-  "homepage": "https://anonimussapee.github.io/todo2"
+  }
 }
