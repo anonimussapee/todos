@@ -1,0 +1,26 @@
+.todoIcons{
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  display: flex;
+  border: double 3px var(--secondary-color);
+}
+.iconCircle{
+  border-radius: 2rem;
+  
+}
+.iconCircle:active{
+ background: var(--background-primary);
+}
+.delete{
+  background-color: #d00000;
+}
+.delete:hover{
+  background-color: #980303;
+}
+.complete{
+  background-color: rgb(0, 55, 255);
+}
+.complete:hover{
+  background-color: rgb(0, 24, 110);
+}

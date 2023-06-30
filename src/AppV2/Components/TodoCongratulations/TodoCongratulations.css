@@ -1,0 +1,251 @@
+.main--congratulation-background{
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ background-color: transparent;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+}
+.main--congratulation-background.hidden{
+ visibility: hidden;
+ width: 0;
+ height: 0;
+}
+.background-close{
+  background-color:rgba(0, 0, 0, 0.17) ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.panel-congratulation{
+  width: 300px;
+  height: 300px;
+  background-color:#03071e ;
+  border: white groove 5px;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.panel-congratulation .todoIcons {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.panel-message{
+  font-size: var(--font-title-big);
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+@keyframes cube {
+  from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+  }
+  to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+  }
+}
+
+.background {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 2rem;
+  border: transparent 5px solid;
+}
+.background li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #0039ad;
+  color: transparent;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 6s ease-in forwards infinite;
+}
+.background li:nth-child(0) {
+  animation-delay: 0s;
+  left: 290px;
+  top: 90px;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(1) {
+  animation-delay: 2s;
+  left: 65px;
+  top: 105px;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(2) {
+  animation-delay: 4s;
+  left: 156px;
+  top: 50px;
+  border-color: #504242;
+}
+
+.background li:nth-child(3) {
+  animation-delay: 6s;
+  left: 206px;
+  top: 200px;
+  border-color: #423030;
+}
+
+.background li:nth-child(4) {
+  animation-delay: 8s;
+  left: 85px;
+  top: 74px;
+
+  border-color: #2b2b2b;
+}
+
+.background li:nth-child(5) {
+  animation-delay: 10s;
+  left: 76px;
+  top: 57px;
+  border-color: #2b2b2b;
+}
+
+.background li:nth-child(6) {
+  animation-delay: 12s;
+  left: 21px;
+  top: 63px;
+  border-color: #ffe031;
+}
+
+.background li:nth-child(7) {
+  animation-delay: 14s;
+  left: 4px;
+  top: 19px;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(8) {
+  animation-delay: 16s;
+  left: 29px;
+  top: 6px;
+
+  border-color: #80b918;
+}
+
+.background li:nth-child(9) {
+  animation-delay: 18s;
+  left: 70px;
+  top: 0vh;
+  border-color: #80b918;
+}
+
+.background li:nth-child(10) {
+  animation-delay: 20s;
+  left: 42vw;
+  top: 96vh;
+  border-color: #80b918;
+}
+
+.background li:nth-child(11) {
+  animation-delay: 22s;
+  left: 72vw;
+  top: 92vh;
+  border-color: #80b918;
+}
+
+.background li:nth-child(12) {
+  animation-delay: 24s;
+  left: 90vw;
+  top: 75vh;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(13) {
+  animation-delay: 26s;
+  left: 54vw;
+  top: 21vh;
+  border-color: #2fab05;
+}
+
+.background li:nth-child(14) {
+  animation-delay: 8.2s;
+  left: 60vw;
+  top: 31vh;
+  border-color: #afb5ae;
+}
+
+.background li:nth-child(15) {
+  animation-delay: 10s;
+  left: 10vw;
+  top: 12vh;
+  border-color: #838c80;
+}
+
+.background li:nth-child(16) {
+  animation-delay: 12s;
+  left: 15vw;
+  top: 39vh;
+}
+
+.background li:nth-child(17) {
+  animation-delay: 14s;
+  left: 96vw;
+  top: 8vh;
+}
+
+.background li:nth-child(18) {
+  animation-delay: 16s;
+  left: 85vw;
+  top: 91vh;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(19) {
+  animation-delay: 18s;
+  left: 91vw;
+  top: 85vh;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(20) {
+  animation-delay: 20s;
+  left: 3vw;
+  top: 47vh;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(21) {
+  animation-delay: 22s;
+  left: 39vw;
+  top: 26vh;
+}
+
+.background li:nth-child(22) {
+  animation-delay: 24s;
+  left: 80vw;
+  top: 59vh;
+  border-color: #0046d4;
+}
+
+.background li:nth-child(23) {
+  animation-delay: 26s;
+  left: 28vw;
+  top: 80vh;
+}

@@ -1,0 +1,31 @@
+.TodoSearchLabel{
+  font-size: var(--font-main);
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-width: 288px;
+  max-width: 500px;
+  gap: 10px;
+  margin: 10px auto;
+  position: relative;
+  color: var(--secondary-color);
+}
+.todoSearchSpan{
+  flex-grow: 1;
+}
+.TodosearchInput{
+  color: var(--primary-color);
+  font-size: var(--font-main);
+  flex-grow: 3;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.TodosearchInput:focus{
+  outline-color: var(--tertiary-color);
+}

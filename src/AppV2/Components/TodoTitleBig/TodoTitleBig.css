@@ -1,0 +1,10 @@
+.title-big{
+  color: var(--secondary-color);
+  font-size: var(--font-title-big);
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.title--loading{
+  opacity: 50%;
+}

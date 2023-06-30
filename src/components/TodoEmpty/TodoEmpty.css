@@ -1,0 +1,14 @@
+.status-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.status-container .statusEmpty{
+  width: 70%;
+  min-width: 200px;
+  max-width: 350px;
+  height: 50%;
+  margin: 0 auto;
+}

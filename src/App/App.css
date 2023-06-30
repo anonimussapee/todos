@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+
+  --primary-color : black;
+  --secondary-color : white;
+  --tertiary-color : #0096c7;
+  --primary-color-light :rgba(30, 30, 30, 0.86); 
+  --background-primary : #03071e;
+  --background-secondary : #2727283d;
+  --font-main : 1.8rem;
+  --font-big: 2.2rem;
+  --font-title-big: 3rem;
+  --card--loading:gray;
+}
+html{
+  font-size: 62.5%;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+.App {
+  text-align: center;
+  width: 90%;
+  min-width: 320px;
+  max-width: 800px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+  background-color: var(--background-primary);
+}
+.container{
+  position: relative;
+  padding: 20px 10px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 500px;
+  align-items: center;
+  height: 45vh;
+  overflow: scroll;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 2rem;
+  border-radius: 2rem;
+  background-color: var(--background-secondary);
+}
+.container::-webkit-scrollbar{
+  display: none;
+}
+.cursor{
+  cursor: pointer;
+}
+.container h3.statusAfter{
+ color: var(--secondary-color);
+ font-size: var(--font-main);
+}
+.modal{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.modal-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.background-modal-close{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-secondary);
+  z-index: 0;
+}
+
+.notfound-container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  padding: 20px;
+}
+.imageNotfound{
+  width: 70%;
+  min-width: 320px;
+  max-width: 600px;
+  height: 70vh;
+  min-height: 300px;
+  max-width: 600px;
+}

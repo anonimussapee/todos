@@ -1,0 +1,19 @@
+.main--card-todo{
+  width: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  height: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  gap: 2rem;
+  font-size: var(--font-main);
+  align-items: center;
+  border-radius: 2rem;
+  color: var(--primary-color);
+  position: relative;
+  background-color: var(--secondary-color);
+}
+.completeTask{
+  text-decoration:line-through;
+}

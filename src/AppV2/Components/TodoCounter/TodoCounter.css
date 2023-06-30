@@ -1,0 +1,7 @@
+.todo-counter{
+  color: var(--secondary-color);
+  font-size: var(--font-main);
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
