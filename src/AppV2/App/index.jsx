@@ -72,21 +72,21 @@ function AppUI2(){
     onEmpty={()=><TodoEmpty value='No hay Nada, Crea tu primer TODO'/>} 
     onEmptySearch={()=><TodoEmpty value={`No hay resutados para: ${searchValue}`}/>}
     todo={todo}
-    // render={item => {
-    //     return (<TodoItem key={item.id}   value={item.name} status={item.status} onComplete={()=>{
-    //       changeStatus(item.id)
-    //     }} onDelete={()=>{
-    //       deleteTask(item.id);
-    //     }} />)
-    //   }}
+    render={item => {
+        return (<TodoItem key={item.id}   value={item.name} status={item.status} onComplete={()=>{
+          changeStatus(item.id)
+        }} onDelete={()=>{
+          deleteTask(item.id);
+        }} />)
+      }}
     >
-     {item => {
+     {/* {item => {
         return (<TodoItem key={item.id}   value={`${item.name } esto es muy loco`} status={item.status} onComplete={()=>{
           changeStatus(item.id)
         }} onDelete={()=>{
           deleteTask(item.id);
         }} />)
-      }}   
+      }}    */}
     </TodoList>    
     <TodoButton value={"Crear Todo's"} todoAction={()=>{
       setOpenModal(true)
