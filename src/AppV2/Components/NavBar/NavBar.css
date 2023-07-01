@@ -28,3 +28,9 @@ nav ul li{
 nav a{
   text-decoration: none;
 }
+@media (max-width:600px) {
+  nav ul li{
+    font-size: 1.5rem;
+    
+  }
+}

@@ -31,7 +31,6 @@ function AppUI2(){
     openModal,
     setOpenModal,
     getDataAction,
-    sincronize,
     setSincronized,
   }= UseTodos();
 
@@ -73,14 +72,22 @@ function AppUI2(){
     onEmpty={()=><TodoEmpty value='No hay Nada, Crea tu primer TODO'/>} 
     onEmptySearch={()=><TodoEmpty value={`No hay resutados para: ${searchValue}`}/>}
     todo={todo}
-    render={()=>searchTodo.map(item => {
-        return (<TodoItem key={item.id}   value={item.name} status={item.status} onComplete={()=>{
+    // render={item => {
+    //     return (<TodoItem key={item.id}   value={item.name} status={item.status} onComplete={()=>{
+    //       changeStatus(item.id)
+    //     }} onDelete={()=>{
+    //       deleteTask(item.id);
+    //     }} />)
+    //   }}
+    >
+     {item => {
+        return (<TodoItem key={item.id}   value={`${item.name } esto es muy loco`} status={item.status} onComplete={()=>{
           changeStatus(item.id)
         }} onDelete={()=>{
           deleteTask(item.id);
         }} />)
-      })}
-      />    
+      }}   
+    </TodoList>    
     <TodoButton value={"Crear Todo's"} todoAction={()=>{
       setOpenModal(true)
     }}
