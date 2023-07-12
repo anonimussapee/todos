@@ -13,11 +13,10 @@ function App() {
   const AppRoutes = () =>{
     let routesnav = useRoutes([
       {path:'/', element:<AppUI/>},
-      {path:'todos/', element:<AppUI/>},
-      {path:'todos/home', element:<AppUI/>},
-      {path:'todos/todo2', element:<AppUI/>},
-      {path:'todos/v2', element:<AppUI2/>},
-      {path:'todos/*', element:<NotFound/>},
+      {path:'/home', element:<AppUI/>},
+      {path:'/todos', element:<AppUI/>},
+      {path:'/v2', element:<AppUI2/>},
+      {path:'/*', element:<NotFound/>},
 
 
     ]);
