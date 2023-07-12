@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { AppUI } from './AppUI';
 import { TodoProvider } from '../components/TodoContext';
-import {  BrowserRouter, useRoutes } from 'react-router-dom';
+import {  HashRouter, useRoutes } from 'react-router-dom';
 import { AppUI2 } from '../AppV2/App';
 import { NavBar } from '../AppV2/Components/NavBar';
 import { NotFound } from '../components/Pages/NotFound';
@@ -12,6 +12,7 @@ function App() {
   
   const AppRoutes = () =>{
     let routesnav = useRoutes([
+      {path:'/', element:<AppUI/>},
       {path:'todos/', element:<AppUI/>},
       {path:'todos/home', element:<AppUI/>},
       {path:'todos/todo2', element:<AppUI/>},
@@ -25,12 +26,12 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <TodoProvider>
       <NavBar/>  
       <AppRoutes/>
       </TodoProvider>
-    </BrowserRouter>
+    </HashRouter>
    
   );
 }  
